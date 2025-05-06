@@ -1,0 +1,22 @@
+posizione
+posizione in m letta sulla scala        tensione al trasduttore di posizione
+
+
+
+magnete
+
+tensione al trasuttore di posizione      posizione (calcolata in base ai dati precedenti)   corrente (in A , già scalata)
+
+
+
+
+im0
+
+lettura del trasduttore di posizione (prossimo a zero)        Trasduttore di corrente (non scalata, dividere per 2.5 per avere corrente in A)
+
+ 
+ 
+ 
+ Dati
+ posizione inizale pallina
+ peso pallina
