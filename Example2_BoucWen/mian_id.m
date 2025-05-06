@@ -1,0 +1,125 @@
+% Bouc Wen Benchmark identification using FL-CMO
+% Simone Pirrera
+clear; close all; clc;
+
+% Load data
+Ntrain = 5000;
+Nvalid = 5000;
+load('boucwen_data.mat');
+u_train = u; y_train = y';
+% Normalization
+sigma_y = 1/std(y_train);
+utrain = {u_train(1:Ntrain)};
+
+% Add noise: gaussian with variance 8e-3
+std_eta = (8e-3)^2;
+eta = std_eta*randn(Ntrain,1);
+figure, plot(y_train(1:Ntrain),'b')
+y_train(1:Ntrain) = y_train(1:Ntrain) + eta;
+hold on, plot(y_train(1:Ntrain),'r')
+y_train(1:Ntrain) = y_train(1:Ntrain) + eta;
+
+ytrain = {y_train(1:Ntrain)*sigma_y};
+uvalid = u_train(Ntrain+1:Ntrain+Nvalid);
+yvalid = y_train(Ntrain+1:Ntrain+Nvalid);
+eta_valid = std_eta*randn(length(yvalid),1);
+yvalid = (yvalid + eta_valid)*sigma_y;
+
+load('Test signals\Validation signals\uval_multisine.mat')
+load('Test signals\Validation signals\yval_multisine.mat')
+utest = uval_multisine';
+ytest = yval_multisine'*sigma_y;
+
+%% Training
+% Results file
+print_to_file = false;
+if print_to_file
+    fileID = fopen("results\\r01.txt","a");
+else
+    fileID = 1;
+end
+
+% Define network
+numExperiments = length(utrain);
+n = 3; [Nn,N_layers] = structureNNOE('8 8');
+fprintf(fileID, "####### n = %d, Nn = [%d,%d] #######\n", n, Nn);
+dim_u = size(utrain{1},2); dim_y = size(ytrain{1},2);
+
+% Initialization of the hoptimization variables
+[Net, numParams] = initializeMultiLayerNNOE(n, Nn, dim_u, dim_y);
+N = Ntrain;
+Net.numParams = numParams;
+fprintf(fileID,"number of parameters: %d\n", Net.numParams);
+fprintf(fileID,"number of training data: %d\n", Ntrain);
+
+% Algorithm parameters
+param.Ts = 2e-3;
+param.max_iter = 10000;
+param.K = 10;
+param.rho = 1e-3; % Regularization cofficient
+param.display_skip = 25;
+param.tol = 1e-4;
+param.ask_continue = 1000+1;
+param.printFile = fileID;
+param.method = "QR";
+
+% Initialization
+x0 = [];
+
+% RUN FL-CMO
+tic
+[Net,sol,iter] = train_nnoe(Net,utrain,ytrain,x0,param);
+time_cmo = toc;
+fprintf(fileID, 'time: %.2f seconds\n', time_cmo);
+fprintf(1, 'time: %.2f seconds\n', time_cmo);
+
+% Plots
+idx_out = 1;
+figure, plot(1:iter, sol(1:numParams,1:iter));
+title('Evolution of parameters estimate', 'FontSize',20);
+
+% Simulation on training data: check overfitting
+for ee = 1:length(utrain)
+    for jj = 1:dim_y
+        y_sim_train = simulateMultiLayerNNOE(Net, utrain{ee}, ytrain{ee}(1:Net.n,:));
+        FIT_train(jj) = 100*(1-norm(y_sim_train(:,jj)-ytrain{ee}(:,jj))/norm(ytrain{ee}(:,jj)-mean(ytrain{ee}(:,jj))));
+        fprintf(fileID, 'FIT training output %d: %.2f%%\n', ee, FIT_train);
+        figure, plot(ytrain{ee}(:,jj)), hold on; plot(y_sim_train(:,jj));
+        legend('true training output','simulated training output','FontSize',20);
+        title('Training data','FontSize',20);
+    end
+end
+
+%% Validation 
+idx_out = 1;
+Nvalid = length(yvalid);
+y0 = yvalid(1:Net.n,idx_out);
+y_sim_valid = simulateMultiLayerNNOE(Net, uvalid, y0);
+y_sim_valid = y_sim_valid/sigma_y;
+yvalid = yvalid/sigma_y;
+figure, plot(yvalid), hold on; plot(y_sim_valid);
+legend('true validation output 1','simulated validation output 1', 'FontSize',20);
+title('Validation','FontSize',20);    
+RMSE_valid = sqrt((1/(Nvalid))*sum((y_sim_valid(:,1)-yvalid(:,1)).^2));
+FIT_valid = 100*(1-norm(y_sim_valid-yvalid)/norm(yvalid-mean(yvalid)));
+fprintf(fileID, 'validation RMSE: %e\n', RMSE_valid);
+fprintf(fileID, 'validation FIT: %.2f%%\n', FIT_valid);
+
+%% TEST
+Ntest = length(ytest);
+y0 = ytest(1:Net.n,idx_out);
+y_sim_test = simulateMultiLayerNNOE(Net, utest, y0);
+y_sim_test = y_sim_test/sigma_y;
+ytest = ytest/sigma_y;
+figure, plot(ytest), hold on; plot(y_sim_test);
+legend('true test output 1','simulated test output 1', 'FontSize',20);
+title('Test','FontSize',20);    
+RMSE_test = sqrt((1/(Ntest))*sum((y_sim_test(:,1)-ytest(:,1)).^2));
+FIT_test = 100*(1-norm(y_sim_test-ytest)/norm(ytest-mean(ytest)));
+fprintf(fileID, 'Test RMSE: %e\n', RMSE_test);
+fprintf(fileID, 'Test FIT: %.2f%%\n', FIT_test);
+
+if print_to_file
+    fclose(fileID);
+end
+save res01.mat Net RMSE_test FIT_test time_cmo param
