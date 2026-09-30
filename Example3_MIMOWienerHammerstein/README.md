@@ -61,3 +61,10 @@ python3 Example3_MIMOWienerHammerstein/run_adam_replicates.py
 `run_batched_nnoe_horizons.py` and `run_full_nnoe10_fatigue.py` are utilities
 imported by the scripts above (`run_adam_replicates.py`, and the full-sequence
 NNOE(10,1) comparison quoted in the text, respectively).
+
+## NNARX baseline
+
+`results/NNARX/` (reported as negative test BFR in the text) was produced with
+the same `nnoe/` toolbox and the same five architectures/data, but trained on
+one-step-ahead prediction error (NNARX) instead of simulation error (NNOE); no
+separate driver script for that configuration is kept in this repository.

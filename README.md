@@ -38,11 +38,16 @@ From the repository root, in MATLAB:
 run('Example1_FluidDamper/main_es1.m')
 run('Example2_BoucWen/main_smart_search.m')          % see its README for the exact options
 run('Example3_MIMOWienerHammerstein/run_cmo_replicates.m')
-run('Example4_GrayBoxMagneticLevitation/run_optimized_tau.m')  % tau = 2e-3
+addpath('Example4_GrayBoxMagneticLevitation', 'native')
+run_optimized_tau(2e-3, "flcmo")                     % Example 4, FL-CMO
 ```
 
 Python baselines (PyTorch / TensorFlow) live alongside the MATLAB drivers in
-each example folder (`run_*.py`). Create an environment with:
+each example folder: `run_pytorch_es1.py` (Example 1: NNARX/NNOE/truncated
+NNOE), `run_recurrent_l512.py` and `run_adam_replicates.py` (Example 3:
+LSTM/GRU/Adam-trained NNOE), `run_adam_comparison.py` (Example 4: Adam BPTT).
+Each example's own README gives the exact invocation and options. Create an
+environment with:
 
 ```sh
 python3 -m venv .venv
