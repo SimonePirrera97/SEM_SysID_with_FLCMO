@@ -1,0 +1,183 @@
+[2026-08-10 16:03:07] Prepared common initializations | result: 25 initializations saved to /private/var/folders/ny/bb3jn0nd4vx1k2hj4dzy44yh0000gn/T/tpdfcefe83_6cf0_4e59_b90c_8e3ee71b641f/common_initializations.mat
+[2026-08-10 16:03:07] Prepared chronological data split | result: train=1600, validation=400, test=1499 samples
+[2026-08-10 16:03:07] Started comparison | result: 5 methods, 25 initializations per method
+[2026-08-10 16:03:07] Configured uniform fit timeout | result: 60 seconds for every validation candidate and final fit
+[2026-08-10 16:03:07] Started method FLCMO | result: 25 common initializations
+[2026-08-10 16:03:09] FLCMO hyperparameter candidate 1 | result: stepSize=0.0001, validation RMSE=58.482, FIT=3.1754%
+[2026-08-10 16:03:11] FLCMO hyperparameter candidate 2 | result: stepSize=0.0005, validation RMSE=48.2553, FIT=20.107%
+[2026-08-10 16:03:13] FLCMO hyperparameter candidate 3 | result: stepSize=0.001, validation RMSE=37.4496, FIT=37.9973%
+[2026-08-10 16:03:13] FLCMO hyperparameter selection | result: candidate=3, stepSize=0.001, validation FIT=37.9973%
+[2026-08-10 16:03:30] FLCMO identification from initialization 1 | result: test RMSE=7.45761, FIT=86.5817%, iterations=2000, time=16.2679 s
+[2026-08-10 16:03:46] FLCMO identification from initialization 2 | result: test RMSE=4.26344, FIT=92.3289%, iterations=2000, time=16.246 s
+[2026-08-10 16:04:02] FLCMO identification from initialization 3 | result: test RMSE=6.73605, FIT=87.88%, iterations=2000, time=16.2335 s
+[2026-08-10 16:04:18] FLCMO identification from initialization 4 | result: test RMSE=6.81095, FIT=87.7452%, iterations=2000, time=16.2385 s
+[2026-08-10 16:04:35] FLCMO identification from initialization 5 | result: test RMSE=5.66634, FIT=89.8047%, iterations=2000, time=16.268 s
+[2026-08-10 16:04:51] FLCMO identification from initialization 6 | result: test RMSE=4.65386, FIT=91.6264%, iterations=2000, time=16.2417 s
+[2026-08-10 16:05:07] FLCMO identification from initialization 7 | result: test RMSE=4.73804, FIT=91.475%, iterations=2000, time=16.2467 s
+[2026-08-10 16:05:23] FLCMO identification from initialization 8 | result: test RMSE=5.80316, FIT=89.5585%, iterations=2000, time=16.2452 s
+[2026-08-10 16:05:40] FLCMO identification from initialization 9 | result: test RMSE=5.56478, FIT=89.9874%, iterations=2000, time=16.2499 s
+[2026-08-10 16:05:56] FLCMO identification from initialization 10 | result: test RMSE=5.98432, FIT=89.2326%, iterations=2000, time=16.2405 s
+[2026-08-10 16:06:12] FLCMO identification from initialization 11 | result: test RMSE=4.17478, FIT=92.4884%, iterations=2000, time=16.2809 s
+[2026-08-10 16:06:28] FLCMO identification from initialization 12 | result: test RMSE=6.42002, FIT=88.4486%, iterations=2000, time=16.321 s
+[2026-08-10 16:06:45] FLCMO identification from initialization 13 | result: test RMSE=5.08661, FIT=90.8478%, iterations=2000, time=16.2681 s
+[2026-08-10 16:07:01] FLCMO identification from initialization 14 | result: test RMSE=5.7901, FIT=89.582%, iterations=2000, time=16.2298 s
+[2026-08-10 16:07:18] FLCMO identification from initialization 15 | result: test RMSE=8.97996, FIT=83.8426%, iterations=2000, time=16.7846 s
+[2026-08-10 16:07:34] FLCMO identification from initialization 16 | result: test RMSE=9.39858, FIT=83.0894%, iterations=2000, time=16.6224 s
+[2026-08-10 16:07:51] FLCMO identification from initialization 17 | result: test RMSE=6.71891, FIT=87.9108%, iterations=2000, time=16.9183 s
+[2026-08-10 16:08:08] FLCMO identification from initialization 18 | result: test RMSE=7.11029, FIT=87.2066%, iterations=2000, time=16.8004 s
+[2026-08-10 16:08:24] FLCMO identification from initialization 19 | result: test RMSE=7.07727, FIT=87.266%, iterations=2000, time=16.1321 s
+[2026-08-10 16:08:40] FLCMO identification from initialization 20 | result: test RMSE=5.28611, FIT=90.4888%, iterations=2000, time=16.0783 s
+[2026-08-10 16:08:57] FLCMO identification from initialization 21 | result: test RMSE=5.85184, FIT=89.4709%, iterations=2000, time=16.5503 s
+[2026-08-10 16:09:14] FLCMO identification from initialization 22 | result: test RMSE=4.63027, FIT=91.6689%, iterations=2000, time=17.5258 s
+[2026-08-10 16:09:31] FLCMO identification from initialization 23 | result: test RMSE=8.33369, FIT=85.0054%, iterations=2000, time=16.2668 s
+[2026-08-10 16:09:49] FLCMO identification from initialization 24 | result: test RMSE=5.17901, FIT=90.6815%, iterations=2000, time=17.9624 s
+[2026-08-10 16:10:07] FLCMO identification from initialization 25 | result: test RMSE=8.598, FIT=84.5298%, iterations=2000, time=18.4433 s
+[2026-08-10 16:10:07] Completed FLCMO run results | result: 25 rows retained for aggregate CSV
+[2026-08-10 16:10:07] Computed statistics for FLCMO | result: FIT mean=88.7499%, time mean=16.5465 s
+[2026-08-10 16:10:07] Started method NNSYSID_NNOE | result: 25 common initializations
+[2026-08-10 16:10:08] NNSYSID NNOE hyperparameter candidate 1 | result: lambda=0.1, validation RMSE=6.59488, FIT=89.0813%, time=0.519409 s
+[2026-08-10 16:10:08] NNSYSID NNOE hyperparameter candidate 2 | result: lambda=1, validation RMSE=8.84472, FIT=85.3564%, time=0.297769 s
+[2026-08-10 16:10:08] NNSYSID NNOE hyperparameter candidate 3 | result: lambda=10, validation RMSE=17.7711, FIT=70.5776%, time=0.178369 s
+[2026-08-10 16:10:08] NNSYSID NNOE hyperparameter selection | result: candidate=1, lambda=0.1, validation FIT=89.0813%
+[2026-08-10 16:10:09] NNSYSID NNOE identification from initialization 1 | result: test RMSE=7.3539, FIT=86.7683%, iterations=17, time=0.259919 s
+[2026-08-10 16:10:09] NNSYSID NNOE identification from initialization 2 | result: test RMSE=48.216, FIT=13.2462%, iterations=3, time=0.108293 s
+[2026-08-10 16:10:09] NNSYSID NNOE identification from initialization 3 | result: test RMSE=11.6576, FIT=79.0248%, iterations=21, time=0.280416 s
+[2026-08-10 16:10:09] NNSYSID NNOE identification from initialization 4 | result: test RMSE=12.4859, FIT=77.5344%, iterations=17, time=0.244313 s
+[2026-08-10 16:10:09] NNSYSID NNOE identification from initialization 5 | result: test RMSE=34.9852, FIT=37.052%, iterations=10, time=0.173133 s
+[2026-08-10 16:10:10] NNSYSID NNOE identification from initialization 6 | result: test RMSE=26.4004, FIT=52.4984%, iterations=11, time=0.193706 s
+[2026-08-10 16:10:10] NNSYSID NNOE identification from initialization 7 | result: test RMSE=13.17, FIT=76.3036%, iterations=20, time=0.322984 s
+[2026-08-10 16:10:10] NNSYSID NNOE identification from initialization 8 | result: test RMSE=10.3899, FIT=81.3057%, iterations=25, time=0.316588 s
+[2026-08-10 16:10:11] NNSYSID NNOE identification from initialization 9 | result: test RMSE=6.46153, FIT=88.3739%, iterations=28, time=0.337837 s
+[2026-08-10 16:10:11] NNSYSID NNOE identification from initialization 10 | result: test RMSE=25.1031, FIT=54.8326%, iterations=13, time=0.209853 s
+[2026-08-10 16:10:11] NNSYSID NNOE identification from initialization 11 | result: test RMSE=14.7403, FIT=73.4782%, iterations=19, time=0.245286 s
+[2026-08-10 16:10:11] NNSYSID NNOE identification from initialization 12 | result: test RMSE=22.8105, FIT=58.9577%, iterations=12, time=0.169933 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 13 | result: test RMSE=17.7015, FIT=68.1501%, iterations=22, time=0.301355 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 14 | result: test RMSE=20.0104, FIT=63.9958%, iterations=11, time=0.190135 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 15 | result: test RMSE=27.5525, FIT=50.4254%, iterations=7, time=0.143462 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 16 | result: test RMSE=32.1399, FIT=42.1715%, iterations=4, time=0.108961 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 17 | result: test RMSE=39.4812, FIT=28.9624%, iterations=5, time=0.123102 s
+[2026-08-10 16:10:12] NNSYSID NNOE identification from initialization 18 | result: test RMSE=16.2428, FIT=70.7746%, iterations=15, time=0.229155 s
+[2026-08-10 16:10:13] NNSYSID NNOE identification from initialization 19 | result: test RMSE=14.8853, FIT=73.2172%, iterations=18, time=0.23712 s
+[2026-08-10 16:10:13] NNSYSID NNOE identification from initialization 20 | result: test RMSE=15.3736, FIT=72.3387%, iterations=19, time=0.270797 s
+[2026-08-10 16:10:13] NNSYSID NNOE identification from initialization 21 | result: test RMSE=6.84228, FIT=87.6889%, iterations=18, time=0.259053 s
+[2026-08-10 16:10:13] NNSYSID NNOE identification from initialization 22 | result: test RMSE=25.3017, FIT=54.4752%, iterations=11, time=0.192902 s
+[2026-08-10 16:10:14] NNSYSID NNOE identification from initialization 23 | result: test RMSE=21.9741, FIT=60.4626%, iterations=13, time=0.238039 s
+[2026-08-10 16:10:14] NNSYSID NNOE identification from initialization 24 | result: test RMSE=6.33063, FIT=88.6094%, iterations=20, time=0.291959 s
+[2026-08-10 16:10:14] NNSYSID NNOE identification from initialization 25 | result: test RMSE=31.4829, FIT=43.3535%, iterations=15, time=0.223716 s
+[2026-08-10 16:10:14] Completed NNSYSID NNOE run results | result: 25 rows retained for aggregate CSV
+[2026-08-10 16:10:14] Computed statistics for NNSYSID_NNOE | result: FIT mean=63.36%, time mean=0.226881 s
+[2026-08-10 16:10:14] Started method PyTorch_NNARX | result: 25 common initializations
+[2026-08-10 16:10:15] Started PyTorch NNARX | result: 25 common initializations, regularization=0.001
+[2026-08-10 16:10:18] PyTorch NNARX hyperparameter candidate 1 | result: learning_rate=0.001, batch_size=32, validation RMSE=5.5729, FIT=90.7733%, epochs=300, time=2.01436 s, timed_out=False
+[2026-08-10 16:10:20] PyTorch NNARX hyperparameter candidate 2 | result: learning_rate=0.0005, batch_size=32, validation RMSE=18.5175, FIT=69.3419%, epochs=300, time=1.96282 s, timed_out=False
+[2026-08-10 16:10:21] PyTorch NNARX hyperparameter candidate 3 | result: learning_rate=0.001, batch_size=64, validation RMSE=19.7994, FIT=67.2195%, epochs=300, time=1.08557 s, timed_out=False
+[2026-08-10 16:10:22] PyTorch NNARX hyperparameter candidate 4 | result: learning_rate=0.0005, batch_size=64, validation RMSE=52.8291, FIT=12.5346%, epochs=300, time=1.0952 s, timed_out=False
+[2026-08-10 16:10:22] PyTorch NNARX hyperparameter selection | result: candidate=1, learning_rate=0.001, batch_size=32, validation FIT=90.7733%
+[2026-08-10 16:10:26] PyTorch NNARX identification from initialization 1 | result: test RMSE=10.7677, FIT=80.626%, epochs=385, time=3.61378 s, timed_out=False
+[2026-08-10 16:10:30] PyTorch NNARX identification from initialization 2 | result: test RMSE=15.877, FIT=71.4329%, epochs=433, time=4.04568 s, timed_out=False
+[2026-08-10 16:10:34] PyTorch NNARX identification from initialization 3 | result: test RMSE=8.46729, FIT=84.765%, epochs=433, time=3.97196 s, timed_out=False
+[2026-08-10 16:10:36] PyTorch NNARX identification from initialization 4 | result: test RMSE=28.1585, FIT=49.3351%, epochs=296, time=2.39857 s, timed_out=False
+[2026-08-10 16:10:39] PyTorch NNARX identification from initialization 5 | result: test RMSE=14.9183, FIT=73.1579%, epochs=385, time=3.07224 s, timed_out=False
+[2026-08-10 16:10:42] PyTorch NNARX identification from initialization 6 | result: test RMSE=13.5873, FIT=75.5527%, epochs=274, time=2.39639 s, timed_out=False
+[2026-08-10 16:10:45] PyTorch NNARX identification from initialization 7 | result: test RMSE=13.2661, FIT=76.1307%, epochs=349, time=3.28454 s, timed_out=False
+[2026-08-10 16:10:48] PyTorch NNARX identification from initialization 8 | result: test RMSE=15.5048, FIT=72.1026%, epochs=371, time=3.50951 s, timed_out=False
+[2026-08-10 16:10:52] PyTorch NNARX identification from initialization 9 | result: test RMSE=20.0991, FIT=63.8362%, epochs=392, time=3.75541 s, timed_out=False
+[2026-08-10 16:10:57] PyTorch NNARX identification from initialization 10 | result: test RMSE=12.9061, FIT=76.7784%, epochs=540, time=5.22399 s, timed_out=False
+[2026-08-10 16:11:01] PyTorch NNARX identification from initialization 11 | result: test RMSE=16.9853, FIT=69.4387%, epochs=361, time=3.47571 s, timed_out=False
+[2026-08-10 16:11:05] PyTorch NNARX identification from initialization 12 | result: test RMSE=14.6647, FIT=73.6141%, epochs=385, time=3.75166 s, timed_out=False
+[2026-08-10 16:11:09] PyTorch NNARX identification from initialization 13 | result: test RMSE=14.0779, FIT=74.6699%, epochs=385, time=3.80996 s, timed_out=False
+[2026-08-10 16:11:12] PyTorch NNARX identification from initialization 14 | result: test RMSE=21.6109, FIT=61.1161%, epochs=296, time=2.90927 s, timed_out=False
+[2026-08-10 16:11:16] PyTorch NNARX identification from initialization 15 | result: test RMSE=11.6648, FIT=79.0118%, epochs=467, time=4.53052 s, timed_out=False
+[2026-08-10 16:11:20] PyTorch NNARX identification from initialization 16 | result: test RMSE=20.9085, FIT=62.3799%, epochs=383, time=3.66632 s, timed_out=False
+[2026-08-10 16:11:24] PyTorch NNARX identification from initialization 17 | result: test RMSE=12.8265, FIT=76.9216%, epochs=464, time=4.43506 s, timed_out=False
+[2026-08-10 16:11:28] PyTorch NNARX identification from initialization 18 | result: test RMSE=22.2267, FIT=60.008%, epochs=361, time=3.28815 s, timed_out=False
+[2026-08-10 16:11:31] PyTorch NNARX identification from initialization 19 | result: test RMSE=11.7769, FIT=78.8102%, epochs=467, time=3.74551 s, timed_out=False
+[2026-08-10 16:11:35] PyTorch NNARX identification from initialization 20 | result: test RMSE=10.1121, FIT=81.8055%, epochs=385, time=3.30635 s, timed_out=False
+[2026-08-10 16:11:38] PyTorch NNARX identification from initialization 21 | result: test RMSE=7.1691, FIT=87.1008%, epochs=375, time=3.16559 s, timed_out=False
+[2026-08-10 16:11:41] PyTorch NNARX identification from initialization 22 | result: test RMSE=8.65197, FIT=84.4327%, epochs=375, time=2.96419 s, timed_out=False
+[2026-08-10 16:11:44] PyTorch NNARX identification from initialization 23 | result: test RMSE=22.3044, FIT=59.8683%, epochs=349, time=2.72181 s, timed_out=False
+[2026-08-10 16:11:46] PyTorch NNARX identification from initialization 24 | result: test RMSE=9.18856, FIT=83.4672%, epochs=275, time=2.23968 s, timed_out=False
+[2026-08-10 16:11:49] PyTorch NNARX identification from initialization 25 | result: test RMSE=13.788, FIT=75.1915%, epochs=400, time=3.53885 s, timed_out=False
+[2026-08-10 16:11:49] Computed means for PyTorch NNARX | result: RMSE=14.8603, FIT=73.2622%, time=3.47283 s
+[2026-08-10 16:11:49] Completed PyTorch NNARX results | result: 25 rows retained for aggregate CSV
+[2026-08-10 16:11:51] Loaded PyTorch NNARX results | result: 25 run rows loaded
+[2026-08-10 16:11:51] Computed statistics for PyTorch_NNARX | result: FIT mean=73.2622%, time mean=3.47283 s
+[2026-08-10 16:11:51] Started method PyTorch_NNOE_Batched | result: 25 common initializations
+[2026-08-10 16:11:52] Started PyTorch NNOE_BATCHED | result: 25 common initializations, regularization=0.001
+[2026-08-10 16:12:09] PyTorch NNOE_BATCHED hyperparameter candidate 1 | result: learning_rate=0.001, batch_size=32, validation RMSE=20.2461, FIT=66.4799%, epochs=250, time=16.4637 s, timed_out=False
+[2026-08-10 16:12:35] PyTorch NNOE_BATCHED hyperparameter candidate 2 | result: learning_rate=0.0005, batch_size=32, validation RMSE=26.1933, FIT=56.6336%, epochs=250, time=26.429 s, timed_out=False
+[2026-08-10 16:13:11] PyTorch NNOE_BATCHED hyperparameter candidate 3 | result: learning_rate=0.0001, batch_size=32, validation RMSE=50.6477, FIT=16.1461%, epochs=250, time=35.6868 s, timed_out=False
+[2026-08-10 16:13:32] PyTorch NNOE_BATCHED hyperparameter candidate 4 | result: learning_rate=0.001, batch_size=64, validation RMSE=33.2635, FIT=44.9279%, epochs=250, time=20.8353 s, timed_out=False
+[2026-08-10 16:13:49] PyTorch NNOE_BATCHED hyperparameter candidate 5 | result: learning_rate=0.0005, batch_size=64, validation RMSE=37.8668, FIT=37.3066%, epochs=250, time=17.1227 s, timed_out=False
+[2026-08-10 16:14:05] PyTorch NNOE_BATCHED hyperparameter candidate 6 | result: learning_rate=0.0001, batch_size=64, validation RMSE=56.1651, FIT=7.01136%, epochs=250, time=16.3093 s, timed_out=False
+[2026-08-10 16:14:22] PyTorch NNOE_BATCHED hyperparameter candidate 7 | result: learning_rate=0.001, batch_size=128, validation RMSE=38.7895, FIT=35.7789%, epochs=250, time=17.2324 s, timed_out=False
+[2026-08-10 16:14:39] PyTorch NNOE_BATCHED hyperparameter candidate 8 | result: learning_rate=0.0005, batch_size=128, validation RMSE=49.2483, FIT=18.4629%, epochs=250, time=16.0221 s, timed_out=False
+[2026-08-10 16:14:55] PyTorch NNOE_BATCHED hyperparameter candidate 9 | result: learning_rate=0.0001, batch_size=128, validation RMSE=58.8301, FIT=2.59899%, epochs=250, time=16.1872 s, timed_out=False
+[2026-08-10 16:14:55] PyTorch NNOE_BATCHED hyperparameter selection | result: candidate=1, learning_rate=0.001, batch_size=32, validation FIT=66.4799%
+[2026-08-10 16:15:17] PyTorch NNOE_BATCHED identification from initialization 1 | result: test RMSE=11.2009, FIT=79.8464%, epochs=347, time=22.4746 s, timed_out=False
+[2026-08-10 16:15:39] PyTorch NNOE_BATCHED identification from initialization 2 | result: test RMSE=11.7475, FIT=78.863%, epochs=348, time=21.8188 s, timed_out=False
+[2026-08-10 16:16:06] PyTorch NNOE_BATCHED identification from initialization 3 | result: test RMSE=11.5653, FIT=79.1908%, epochs=372, time=26.6246 s, timed_out=False
+[2026-08-10 16:16:34] PyTorch NNOE_BATCHED identification from initialization 4 | result: test RMSE=11.5813, FIT=79.162%, epochs=388, time=28.5427 s, timed_out=False
+[2026-08-10 16:16:55] PyTorch NNOE_BATCHED identification from initialization 5 | result: test RMSE=11.9507, FIT=78.4974%, epochs=256, time=20.3542 s, timed_out=False
+[2026-08-10 16:17:22] PyTorch NNOE_BATCHED identification from initialization 6 | result: test RMSE=11.5363, FIT=79.2431%, epochs=346, time=27.4149 s, timed_out=False
+[2026-08-10 16:17:55] PyTorch NNOE_BATCHED identification from initialization 7 | result: test RMSE=11.5646, FIT=79.1921%, epochs=331, time=33.3581 s, timed_out=False
+[2026-08-10 16:18:26] PyTorch NNOE_BATCHED identification from initialization 8 | result: test RMSE=11.1161, FIT=79.9991%, epochs=260, time=30.4221 s, timed_out=False
+[2026-08-10 16:18:59] PyTorch NNOE_BATCHED identification from initialization 9 | result: test RMSE=11.4365, FIT=79.4227%, epochs=286, time=32.8836 s, timed_out=False
+[2026-08-10 16:19:22] PyTorch NNOE_BATCHED identification from initialization 10 | result: test RMSE=12.5347, FIT=77.4466%, epochs=320, time=23.1245 s, timed_out=False
+[2026-08-10 16:19:45] PyTorch NNOE_BATCHED identification from initialization 11 | result: test RMSE=11.6983, FIT=78.9515%, epochs=369, time=23.0848 s, timed_out=False
+[2026-08-10 16:20:03] PyTorch NNOE_BATCHED identification from initialization 12 | result: test RMSE=11.4016, FIT=79.4853%, epochs=291, time=18.2148 s, timed_out=False
+[2026-08-10 16:20:30] PyTorch NNOE_BATCHED identification from initialization 13 | result: test RMSE=11.2192, FIT=79.8135%, epochs=436, time=27.0602 s, timed_out=False
+[2026-08-10 16:20:48] PyTorch NNOE_BATCHED identification from initialization 14 | result: test RMSE=11.8197, FIT=78.733%, epochs=291, time=18.168 s, timed_out=False
+[2026-08-10 16:21:09] PyTorch NNOE_BATCHED identification from initialization 15 | result: test RMSE=11.1393, FIT=79.9572%, epochs=334, time=20.9586 s, timed_out=False
+[2026-08-10 16:21:27] PyTorch NNOE_BATCHED identification from initialization 16 | result: test RMSE=11.2031, FIT=79.8426%, epochs=286, time=17.967 s, timed_out=False
+[2026-08-10 16:21:45] PyTorch NNOE_BATCHED identification from initialization 17 | result: test RMSE=11.0361, FIT=80.143%, epochs=280, time=17.6622 s, timed_out=False
+[2026-08-10 16:22:02] PyTorch NNOE_BATCHED identification from initialization 18 | result: test RMSE=11.7108, FIT=78.929%, epochs=275, time=16.9146 s, timed_out=False
+[2026-08-10 16:22:22] PyTorch NNOE_BATCHED identification from initialization 19 | result: test RMSE=11.8829, FIT=78.6193%, epochs=317, time=19.6843 s, timed_out=False
+[2026-08-10 16:22:37] PyTorch NNOE_BATCHED identification from initialization 20 | result: test RMSE=11.7442, FIT=78.869%, epochs=244, time=15.3909 s, timed_out=False
+[2026-08-10 16:22:53] PyTorch NNOE_BATCHED identification from initialization 21 | result: test RMSE=11.3271, FIT=79.6194%, epochs=257, time=16.19 s, timed_out=False
+[2026-08-10 16:23:12] PyTorch NNOE_BATCHED identification from initialization 22 | result: test RMSE=11.5888, FIT=79.1486%, epochs=295, time=18.1656 s, timed_out=False
+[2026-08-10 16:23:31] PyTorch NNOE_BATCHED identification from initialization 23 | result: test RMSE=11.7518, FIT=78.8552%, epochs=313, time=19.3881 s, timed_out=False
+[2026-08-10 16:23:50] PyTorch NNOE_BATCHED identification from initialization 24 | result: test RMSE=11.2479, FIT=79.762%, epochs=304, time=18.8873 s, timed_out=False
+[2026-08-10 16:24:08] PyTorch NNOE_BATCHED identification from initialization 25 | result: test RMSE=12.006, FIT=78.398%, epochs=287, time=18.128 s, timed_out=False
+[2026-08-10 16:24:08] Computed means for PyTorch NNOE_BATCHED | result: RMSE=11.5604, FIT=79.1996%, time=22.1153 s
+[2026-08-10 16:24:08] Completed PyTorch NNOE_BATCHED results | result: 25 rows retained for aggregate CSV
+[2026-08-10 16:24:08] Loaded PyTorch NNOE_BATCHED results | result: 25 run rows loaded
+[2026-08-10 16:24:08] Computed statistics for PyTorch_NNOE_Batched | result: FIT mean=79.1996%, time mean=22.1153 s
+[2026-08-10 16:24:08] Started method PyTorch_NNOE | result: 25 common initializations
+[2026-08-10 16:24:09] Started PyTorch NNOE | result: 25 common initializations, regularization=0.001
+[2026-08-10 16:24:22] PyTorch NNOE hyperparameter candidate 1 | result: learning_rate=0.001, batch_size=0, validation RMSE=59.4528, FIT=1.56804%, epochs=250, time=12.2335 s, timed_out=False
+[2026-08-10 16:24:34] PyTorch NNOE hyperparameter candidate 2 | result: learning_rate=0.0005, batch_size=0, validation RMSE=60.3956, FIT=0.00726688%, epochs=250, time=11.888 s, timed_out=False
+[2026-08-10 16:24:45] PyTorch NNOE hyperparameter candidate 3 | result: learning_rate=0.0001, batch_size=0, validation RMSE=61.2463, FIT=-1.40124%, epochs=250, time=11.8463 s, timed_out=False
+[2026-08-10 16:24:45] PyTorch NNOE hyperparameter selection | result: candidate=1, learning_rate=0.001, batch_size=0, validation FIT=1.56804%
+[2026-08-10 16:25:45] PyTorch NNOE identification from initialization 1 | result: test RMSE=48.7683, FIT=12.2523%, epochs=986, time=60.0507 s, timed_out=True
+[2026-08-10 16:26:46] PyTorch NNOE identification from initialization 2 | result: test RMSE=48.7309, FIT=12.3197%, epochs=994, time=60.0248 s, timed_out=True
+[2026-08-10 16:27:46] PyTorch NNOE identification from initialization 3 | result: test RMSE=48.6467, FIT=12.4712%, epochs=1000, time=59.9539 s, timed_out=False
+[2026-08-10 16:28:46] PyTorch NNOE identification from initialization 4 | result: test RMSE=48.6914, FIT=12.3908%, epochs=997, time=60.0081 s, timed_out=True
+[2026-08-10 16:29:46] PyTorch NNOE identification from initialization 5 | result: test RMSE=48.7545, FIT=12.2773%, epochs=991, time=60.0043 s, timed_out=True
+[2026-08-10 16:30:46] PyTorch NNOE identification from initialization 6 | result: test RMSE=48.6699, FIT=12.4295%, epochs=991, time=60.0521 s, timed_out=True
+[2026-08-10 16:31:46] PyTorch NNOE identification from initialization 7 | result: test RMSE=48.7376, FIT=12.3075%, epochs=989, time=60.0084 s, timed_out=True
+[2026-08-10 16:32:46] PyTorch NNOE identification from initialization 8 | result: test RMSE=48.8017, FIT=12.1923%, epochs=987, time=60.0133 s, timed_out=True
+[2026-08-10 16:33:46] PyTorch NNOE identification from initialization 9 | result: test RMSE=48.7586, FIT=12.2698%, epochs=987, time=60.0513 s, timed_out=True
+[2026-08-10 16:34:46] PyTorch NNOE identification from initialization 10 | result: test RMSE=48.6901, FIT=12.393%, epochs=992, time=60.0351 s, timed_out=True
+[2026-08-10 16:35:46] PyTorch NNOE identification from initialization 11 | result: test RMSE=48.7745, FIT=12.2413%, epochs=992, time=60.0336 s, timed_out=True
+[2026-08-10 16:36:46] PyTorch NNOE identification from initialization 12 | result: test RMSE=48.7984, FIT=12.1981%, epochs=981, time=60.0134 s, timed_out=True
+[2026-08-10 16:37:46] PyTorch NNOE identification from initialization 13 | result: test RMSE=48.6824, FIT=12.4069%, epochs=994, time=60.0317 s, timed_out=True
+[2026-08-10 16:38:46] PyTorch NNOE identification from initialization 14 | result: test RMSE=48.6929, FIT=12.3881%, epochs=993, time=60.0039 s, timed_out=True
+[2026-08-10 16:39:46] PyTorch NNOE identification from initialization 15 | result: test RMSE=48.8147, FIT=12.1689%, epochs=979, time=60.0401 s, timed_out=True
+[2026-08-10 16:40:46] PyTorch NNOE identification from initialization 16 | result: test RMSE=48.7128, FIT=12.3522%, epochs=1000, time=60.0419 s, timed_out=True
+[2026-08-10 16:41:46] PyTorch NNOE identification from initialization 17 | result: test RMSE=48.6745, FIT=12.4212%, epochs=1000, time=59.8665 s, timed_out=False
+[2026-08-10 16:42:46] PyTorch NNOE identification from initialization 18 | result: test RMSE=48.7028, FIT=12.3702%, epochs=1000, time=59.85 s, timed_out=False
+[2026-08-10 16:43:46] PyTorch NNOE identification from initialization 19 | result: test RMSE=48.6795, FIT=12.4122%, epochs=1000, time=59.9088 s, timed_out=False
+[2026-08-10 16:44:45] PyTorch NNOE identification from initialization 20 | result: test RMSE=48.6337, FIT=12.4946%, epochs=1000, time=59.4849 s, timed_out=False
+[2026-08-10 16:45:45] PyTorch NNOE identification from initialization 21 | result: test RMSE=48.6334, FIT=12.495%, epochs=1000, time=59.4539 s, timed_out=False
+[2026-08-10 16:46:44] PyTorch NNOE identification from initialization 22 | result: test RMSE=48.6299, FIT=12.5015%, epochs=1000, time=59.5371 s, timed_out=False
+[2026-08-10 16:47:44] PyTorch NNOE identification from initialization 23 | result: test RMSE=48.7254, FIT=12.3296%, epochs=992, time=60.0212 s, timed_out=True
+[2026-08-10 16:48:44] PyTorch NNOE identification from initialization 24 | result: test RMSE=48.7278, FIT=12.3252%, epochs=978, time=60.0189 s, timed_out=True
+[2026-08-10 16:49:44] PyTorch NNOE identification from initialization 25 | result: test RMSE=48.7335, FIT=12.315%, epochs=992, time=60.0048 s, timed_out=True
+[2026-08-10 16:49:44] Computed means for PyTorch NNOE | result: RMSE=48.7146, FIT=12.3489%, time=59.9405 s
+[2026-08-10 16:49:44] Completed PyTorch NNOE results | result: 25 rows retained for aggregate CSV
+[2026-08-10 16:49:44] Loaded PyTorch NNOE results | result: 25 run rows loaded
+[2026-08-10 16:49:44] Computed statistics for PyTorch_NNOE | result: FIT mean=12.3489%, time mean=59.9405 s
+[2026-08-10 16:49:45] Saved aggregate results | result: 125 run-level rows written to /Users/simonepirrera/Desktop/Vanishing-gradient free NL SysID/code_new/Example1_FluidDamper/results/results.csv
+[2026-08-10 16:49:45] Saved summary tables | result: /Users/simonepirrera/Desktop/Vanishing-gradient free NL SysID/code_new/Example1_FluidDamper/results/summary.csv and /Users/simonepirrera/Desktop/Vanishing-gradient free NL SysID/code_new/Example1_FluidDamper/results/summary.tex
+[2026-08-10 16:49:45] Completed comparison | result: all requested methods finished successfully

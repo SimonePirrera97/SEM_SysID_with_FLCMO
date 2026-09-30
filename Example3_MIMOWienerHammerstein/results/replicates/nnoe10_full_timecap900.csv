@@ -1,0 +1,2 @@
+method,initialization_seed,paper_row,hidden,layers,parameters,training_rmse1,training_rmse2,training_bfr1,training_bfr2,test_rmse1,test_rmse2,test_bfr1,test_bfr2,mean_test_bfr,training_seconds,epochs,seconds_per_epoch,learning_rate,regularization,sequence_length,batch_size,monitor_every,minimum_epochs,fit_patience,fit_min_delta,time_cap_seconds,stop_reason
+NNOE_ADAM_FULL,3003,3,10,1,172,0.6953668,0.6828685,72.519806,71.29709,0.94639134,1.8001027,53.054893,-14.592457,19.231218,517.561948917,1710,0.30266780638421054,0.003,0.001,3500,1,10,200,10,0.01,900,training FIT stabilized

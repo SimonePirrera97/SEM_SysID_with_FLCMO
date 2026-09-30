@@ -1,0 +1,2 @@
+timestamp_utc,method,replicate,initialization_seed,paper_row,hidden,learning_rate,regularization,horizon,batch_size,error
+not_captured,NNOE_ADAM,3,3010,10,5x5x5,0.001,0.001,512,64,non-finite objective before fatigue

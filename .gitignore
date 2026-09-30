@@ -1,0 +1,30 @@
+# OS / editor cruft
+.DS_Store
+*~
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# MATLAB
+*.asv
+slprj/
+
+# Exploratory / smoke-test result sets that do not match the numbers
+# reported in the paper. Keep this list in sync with what each example's
+# canonical run script actually writes.
+Example2_BoucWen/results/flcmo_nnoe_search/
+Example2_BoucWen/results/smart_search_12000_smoke_test/
+Example2_BoucWen/results/smart_search_12000_smoke_test_v2/
+Example3_MIMOWienerHammerstein/results/GRU/
+Example3_MIMOWienerHammerstein/results/LSTM/
+Example3_MIMOWienerHammerstein/results/NNOE/
+Example3_MIMOWienerHammerstein/results/full_sequence/
+Example3_MIMOWienerHammerstein/results/revised/
+Example4_GrayBoxMagneticLevitation/results/optimized_result_tau1e3.mat
+Example4_GrayBoxMagneticLevitation/results/optimized_result_tau2e3.mat
+Example4_GrayBoxMagneticLevitation/results/optimized_result_tau5e3.mat
+Example4_GrayBoxMagneticLevitation/results/optimized_result_fatigue.mat

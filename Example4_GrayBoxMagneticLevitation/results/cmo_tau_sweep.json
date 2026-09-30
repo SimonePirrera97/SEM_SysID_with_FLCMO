@@ -1,0 +1,15 @@
+[
+  {
+    "tau": 0.005,
+    "iterations": 3900,
+    "elapsed_seconds": 402.168754708,
+    "estimate": [
+      0.00021034323355924352,
+      2.0036245576886682e-05,
+      0.014999999974697227
+    ],
+    "best_validation_fit": 0.9999284676732774,
+    "best_validation_iteration": 1900,
+    "constraint_norm": 9.344768561199234e-07
+  }
+]
