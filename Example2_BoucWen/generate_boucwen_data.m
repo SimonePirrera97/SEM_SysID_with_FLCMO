@@ -3,7 +3,7 @@ function outputFile = generate_boucwen_data(seed)
 % The protected Newmark integrator and official script remain in
 % BenchmarkFiles. This wrapper fixes the random phase seed and saves their
 % noiseless 40,960-sample result under data/. Measurement noise is added by
-% run_flcmo_nnoe_search after the training/validation split.
+% main_smart_search after the training/validation split.
 arguments
     seed (1,1) double {mustBeInteger,mustBeNonnegative} = 220812
 end
