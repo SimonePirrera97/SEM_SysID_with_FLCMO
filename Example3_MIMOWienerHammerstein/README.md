@@ -58,6 +58,6 @@ python3 Example3_MIMOWienerHammerstein/run_recurrent_l512.py
 python3 Example3_MIMOWienerHammerstein/run_adam_replicates.py
 ```
 
-`run_python_baselines.py`, `run_batched_nnoe_horizons.py` and
-`run_overnight_campaign.py` are the underlying/orchestration utilities that the
-scripts above import or extend for further exploration beyond the paper's grid.
+`run_batched_nnoe_horizons.py` and `run_full_nnoe10_fatigue.py` are utilities
+imported by the scripts above (`run_adam_replicates.py`, and the full-sequence
+NNOE(10,1) comparison quoted in the text, respectively).

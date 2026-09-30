@@ -21,20 +21,20 @@ All three methods below share the initial guess
 
 ```matlab
 addpath('Example4_GrayBoxMagneticLevitation', 'native')
-run_optimized_tau(2e-3, "tau2e3_altinit")
+run_optimized_tau(2e-3, "flcmo")
 ```
 
 `K=1`, step `tau=2e-3`; training stops when validation BFR (checked every 100
 iterations) fails to improve by `1e-5` over 20 consecutive checks, up to
 `1e5` iterations, restoring the best validation point. Output:
-`results/optimized_result_tau2e3_altinit.mat`.
+`results/optimized_result_flcmo.mat`.
 
 ## Adam BPTT baseline
 
 ```sh
 python3 Example4_GrayBoxMagneticLevitation/run_adam_comparison.py \
     --method batched --initial-physical 2.5e-4 2.5e-5 3e-2 \
-    --output Example4_GrayBoxMagneticLevitation/results/adam_truncated_altinit_fatigue.json
+    --output Example4_GrayBoxMagneticLevitation/results/adam_truncated_result.json
 ```
 
 Length-128 truncated sequences, batches of 16, learning rate `1e-3`, up to
