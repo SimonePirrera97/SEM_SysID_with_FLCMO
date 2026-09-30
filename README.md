@@ -91,8 +91,7 @@ Compiled Apple-silicon (arm64) binaries are included:
 - `Example4_GrayBoxMagneticLevitation/levitator_constraints_mex.mexmaca64`
 - `native/sidqr_mex.mexmaca64`
 
-On another platform, use the `*_matlab` fallback implementations, or rebuild
-from the C sources in `native/` and each example folder with MATLAB's `mex`,
+On another platform, use the `*_matlab` fallback implementations, or rebuild from the C sources in `native/` and each example folder with MATLAB's `mex`,
 or (on macOS, without a full Xcode install) with:
 
 ```sh
